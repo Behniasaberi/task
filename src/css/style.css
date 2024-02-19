@@ -1,0 +1,192 @@
+/* Reset  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Root*/
+:root {
+  --color-primary: #219f95;
+  --color-secondary: #afcdee;
+  --color-body: #000;
+  --color-white: rgb(255, 255, 255);
+  --color-secondary-dark: #234894;
+  --color-badge: #696969;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-body);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h1 {
+  font-weight: 900px;
+  color: #000;
+}
+
+h2 {
+  color: var(--color-secondary-dark);
+  font-weight: 250px;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+@media screen and ( min-widtd:1024px) {
+  body {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+/* button*/
+.btn {
+  cursor: pointer;
+  width: 150px;
+  height: 64px;
+  outline: 0;
+  border-radius: 10px;
+  padding: 10 11;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Badge*/
+.badge {
+  display: inline-block;
+  padding: 17px 25px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  background-color: var(--color-secondary);
+  color: #234894;
+}
+
+/* List*/
+
+.list {
+  list-style: none;
+  font-size: 1.5rem;
+}
+.list--tick .list__item {
+  background: url(/assets/images/man.svg) no-repeat right;
+  background-position: right center;
+  padding-right: 3rem;
+  margin-bottom: 1.3rem;
+  /* width: 40px;*/
+  /*height: 40px;*/
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+.pnladmin_item {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.pnlbadge__badge {
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  margin-top: 0rem;
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+  color: var(--color-secondary);
+  border: 2px solid var(--color-primery);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: var(--color-bg-badge);
+}
+.pnlbadge__h3 {
+  font-size: 1.6rem;
+  color: var(--color-secondary-dark);
+  font-weight: 600;
+  margin-right: 1rem;
+}
+.pnlbadge_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pnladmin__date {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-gray);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.pnladmain__sec1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+/*plan*/
+
+.block-plan {
+  display: grid;
+  gap: 1rem;
+}
+.plan {
+  max-height: 400px;
+  font-size: 1.8rem;
+}
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 3rem 3rem;
+}
+.plan__introduction {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.plan__name2 {
+  font-size: 2rem;
+  color: var(--color-body);
+}
+
+.plan__description {
+  display: block;
+  font-size: 1.3rem;
+  color: var(--color-badge);
+}
+
+@media screen and (min-width: 1024px) {
+  .block-plan {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
